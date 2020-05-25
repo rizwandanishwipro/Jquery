@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+//Assignment-1
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("h1").append(" <b>JQuery</b>");
+  });
+
+  $("#btn1").click(function(){
+    $("#riz1").append("<p>jQuery is a fast and concise JavaScript Library created by John Resig in 2006 with a nice motto - Write less, do more. </p>");
+  });
+});
+
+//Assignment-2
+
+
+$(document).ready(function(){
+  $("#btn2").click(function(){
+    $("#btn3").fadeTo(500, 0);
+  });
+});
+
+//Assignment-3
+$(document).ready(function() { 
+                $("[type=text]").hide();   
+        });
+        
+//Assignment-4     
+$(document).ready(function(){
+  $("#intro").css("background-color", "green");
+  $("h6").css("background-color", "green");
+  $("#hide").hide();
+  $("#hide1").hide();
+  $("#hide2").hide();
+  
+  
+});
+        
+</script>
+</head>
+<body>
+
+<!--Assignment-1-->
+Assignment-1
+<br>
+<br>
+<div>
+<h1></h1>
+<p id="riz1"></p>
+<button id="btn1">Append text</button>
+</div>
+
+<br>
+<br>
+<br>
+
+<!--Assignment-2-->
+Assignment-2
+<br>
+<br>
+<div>
+<button id="btn2"><p id="btn3">Click this paragraph to see it fade.</p></button>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<!--Assignment-3-->
+
+Assignment-3
+<br>
+<br>
+<form name='demo_form'>
+First name: <input type="text" name="fname"><br>
+Last name: <input type="text" name="lname"><br>
+<input type="submit" value="Submit">
+</form>
+<br>
+<br>
+<br>
+<br>
+<!--Assignment-4-->
+
+Assignment-4
+
+<p id="intro">jQuery is a lightweight, "write less, do more", JavaScript library.
+<h6>The purpose of jQuery is to make it much easier to use JavaScript on your website</h6>
+</p>
+<ol>
+		<li>HTML/DOM manipulation</li>
+        <li>CSS manipulation</li>
+        <li id="hide">HTML event methods</li>
+        <li id="hide1">Effects and animations</li>
+        <li id="hide2">AJAX</li>
+
+</ol>
+</body>
+</html>
